@@ -363,3 +363,60 @@ const getPosition = function() {
     });
 };
 getPosition().then((resp) => console.log(resp)).catch((err) => console.error(err));
+
+
+// let h1 = document.querySelector("h1");
+// let h3 = document.getElementsByTagName("h3")[0];
+// let destination = document.querySelector("#destination");
+
+
+// function renderPlanet(planets) {
+//     // h3.innerText = planets.name;
+//     let img = `<img src="${planets.image}" alt="" style="display: none">`
+//     destination.insertAdjacentHTML("beforeend", `<h3 style="display: none">${planets.name}</h3>`);
+//     destination.insertAdjacentHTML("beforeend", img);
+// }
+
+
+// function getPlanetData(count) {
+//     fetch("../planets/planets.json")
+//     .then(function(response) {
+//         console.log(response)
+//         if(!response.ok) {
+//             throw new Error("Somethings wrong, first fetch!")
+//         }
+//         return response.json();
+//     })
+//     .then(data => {
+//         console.log(data);
+//         renderPlanet(data[count]);
+//     })
+// }
+
+
+// h3.addEventListener('click', () => {
+//     let img = document.getElementsByTagName('img')[0];
+//     if(img) {
+//         img.style.display = (img.style.display == "none" ? "block": "none");
+//     }
+//     let secondH3 = document.getElementsByTagName("h3")[1];
+//     if(secondH3) {
+//         secondH3.style.display = (secondH3.style.display == "none" ? "block": "none");
+//     }
+// })
+
+
+// let counter = 0;
+// h1.addEventListener("click", () => {
+//     let img = document.getElementsByTagName('img')[0];
+//     let secondH3 = document.getElementsByTagName("h3")[1];
+//     if(img) {
+//         destination.removeChild(img);
+//         destination.removeChild(secondH3);
+//     }
+//     getPlanetData(counter);
+//     counter += 1;
+//     if(!(counter % 6)) {
+//         counter = 0;
+//     }
+// });
